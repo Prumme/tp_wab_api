@@ -96,3 +96,11 @@ if($route === "messages_room"){
         die();
     }
 }
+
+require __DIR__ . "/library/json-response.php";
+
+Response::json(
+    404, [], [
+    "error" => "Route not found"
+    ]
+);

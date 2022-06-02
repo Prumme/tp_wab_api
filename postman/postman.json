@@ -496,6 +496,48 @@
 			"item": [
 				{
 					"name": "get all message of room",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "28b98f9ed8233ec7a9fd1d73544e6d68",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roomId\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/tp_test/messages_room",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tp_test",
+								"messages_room"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bad Routes",
+			"item": [
+				{
+					"name": "Bad Route",
 					"request": {
 						"method": "GET",
 						"header": []
