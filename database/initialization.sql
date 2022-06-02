@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS `tp_web_api`;
+DROP DATABASE IF EXISTS `tp-web-api`;
 
-CREATE DATABASE `tp_web_api` CHARACTERE SET utf8mb4 COLLATE utf8mb_general_ci;
+CREATE DATABASE `tp-web-api` CHARACTER SET utf8mb4 COLLATE utf8mb_general_ci;
 
 CREATE TABLE users(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,

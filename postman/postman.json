@@ -1,0 +1,508 @@
+{
+	"info": {
+		"_postman_id": "ed625d6b-4bb9-4142-a592-9b45023518bc",
+		"name": "TP_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15516207"
+	},
+	"item": [
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"aurel@aurel.com\",\r\n    \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/tp_test/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tp_test",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "logout",
+			"item": [
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "fe4d5bece35232dc73d8e20ee42d97c3",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\":\"fe4d5bece35232dc73d8e20ee42d97c3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/tp_test/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tp_test",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "get all users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "c6fcae1f99ccc30631839db4fa7a85f2",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/tp_test/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tp_test",
+								"users"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "643da6e166b71d9d35db277952f7cff8",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "28b98f9ed8233ec7a9fd1d73544e6d68",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"2\",\r\n    \"email\":\"mat@thias.com\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/tp_test/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tp_test",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "c6fcae1f99ccc30631839db4fa7a85f2",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"lyes@lyes.com\",\r\n    \"password\":\"password\",\r\n    \"role\":\"USER\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/tp_test/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tp_test",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "28b98f9ed8233ec7a9fd1d73544e6d68",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/tp_test/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tp_test",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "messages",
+			"item": [
+				{
+					"name": "get  all messages",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "c6fcae1f99ccc30631839db4fa7a85f2",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/tp_test/messages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tp_test",
+								"messages"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update message",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "c6fcae1f99ccc30631839db4fa7a85f2",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"1\",\r\n    \"body\":\"this is the body updated\",\r\n    \"timestamp\":\"2022-06-06 17:00:00\",\r\n    \"roomId\":\"1\",\r\n    \"userId\":\"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/tp_test/messages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tp_test",
+								"messages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete message",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "c6fcae1f99ccc30631839db4fa7a85f2",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/tp_test/messages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tp_test",
+								"messages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create message",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "c6fcae1f99ccc30631839db4fa7a85f2",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"body\":\"this is the body\",\r\n    \"timestamp\":\"2022-06-06 17:00:00\",\r\n    \"roomId\":\"1\",\r\n    \"userId\":\"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/tp_test/messages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tp_test",
+								"messages"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "rooms",
+			"item": [
+				{
+					"name": "get all rooms",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "28b98f9ed8233ec7a9fd1d73544e6d68",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/tp_test/rooms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tp_test",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete room",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "c6fcae1f99ccc30631839db4fa7a85f2",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/tp_test/rooms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tp_test",
+								"rooms"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "28b98f9ed8233ec7a9fd1d73544e6d68",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create room",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "c6fcae1f99ccc30631839db4fa7a85f2",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"room 1\",\r\n    \"description\":\"this is the first room\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/tp_test/rooms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tp_test",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update room",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "c6fcae1f99ccc30631839db4fa7a85f2",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"1\",\r\n    \"name\":\"room 1\",\r\n    \"description\":\"this is the first updated room\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/tp_test/rooms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tp_test",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "messages_room",
+			"item": [
+				{
+					"name": "get all message of room",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
